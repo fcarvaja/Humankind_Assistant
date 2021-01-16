@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/campeones_hk"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_Virtud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#99FFFFFF"
+        android:text="@string/Txt_Virtud"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/TextView_PtosEstructura"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <Button
+        android:id="@+id/btn_RestarVoluntad"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_border_restar"
+        android:onClick="restarVoluntad"
+        android:text="@string/btn_Decremento"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toEndOf="@+id/textView_Voluntad"
+        app:layout_constraintTop_toBottomOf="@+id/btn_SumarVoluntad"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/btn_SumarVoluntad"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_border_sumar"
+        android:onClick="sumarVoluntad"
+        android:text="@string/btn_Incremento"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toEndOf="@+id/textView_Voluntad"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PtosVoluntad" />
+
+    <TextView
+        android:id="@+id/textView_Voluntad"
+        android:layout_width="80dp"
+        android:layout_height="81dp"
+        android:background="@drawable/textview_border_voluntad"
+        android:text="@string/Txt_Voluntad"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PtosVoluntad"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <Button
+        android:id="@+id/btn_RestarVida"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_border_restar"
+        android:onClick="restarVida"
+        android:text="@string/btn_Decremento"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_PtosVoluntad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toEndOf="@+id/textView_Vida"
+        app:layout_constraintTop_toBottomOf="@+id/btn_SumarVida"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/TextView_PtosEstructura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Txt_PtosEstructura"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:background="#99FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/textView_PtosVoluntad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Txt_PtosVoluntad"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:background="#99FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_PtosEstructura"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <TextView
+        android:id="@+id/textView_Vida"
+        android:layout_width="80dp"
+        android:layout_height="81dp"
+        android:background="@drawable/textview_border_vida"
+        android:text="@string/Txt_Vida"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_PtosVoluntad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_PtosEstructura"
+        app:layout_constraintVertical_bias="0.324" />
+
+    <Button
+        android:id="@+id/btn_SumarVida"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_border_sumar"
+        android:onClick="sumarVida"
+        android:text="@string/btn_Incremento"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toEndOf="@+id/textView_Vida"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_PtosEstructura" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Virtud">
+
+        <Button
+            android:id="@+id/button_faccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="generarFaccion"
+            android:text="@string/btn_Faccion" />
+
+        <Button
+            android:id="@+id/button_Valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="generarValor"
+            android:text="@string/btn_Valor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView_faccion"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="#99FFFFFF"
+            android:contentDescription="@string/ContentDesc"
+            app:srcCompat="@android:drawable/divider_horizontal_bright" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView_resultadoValor"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/textview_border_valorvirtud"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_background"
+        android:layout_width="182dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#99FFFFFF"
+        android:onClick="cambiarBackground"
+        android:text="@string/btn_Background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_ResetVirtud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:onClick="resetearVirtud"
+        android:text="@string/btn_Reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

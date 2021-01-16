@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HK_Assistant</string>
+    <string name="Titulo">Humankind</string>
+    <string name="ContentDesc">Descripción</string>
+    <string name="Txt_PtosEstructura">Puntos de Estructura:</string>
+    <string name="Txt_PtosVoluntad">Voluntad:</string>
+    <string name="Txt_Virtud">Virtud:</string>
+    <string name="btn_Incremento">+1</string>
+    <string name="btn_Faccion">Facción:</string>
+    <string name="btn_Valor">Valor:</string>
+    <string name="btn_Decremento">-1</string>
+    <string name="btn_Background">Cambiar Background</string>
+    <string name="Txt_Vida">15</string>
+    <string name="Txt_Voluntad">3</string>
+    <string name="btn_Reset">Reset Virtud</string>
+</resources>
